@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FacebookPopover_Example' do
+  pod 'FacebookPopover', :path => '../'
+
+  target 'FacebookPopover_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
