@@ -30,11 +30,19 @@
                                     <action selector="showUpPopoverActionWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UR6-Bq-Rk9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iE3-Kq-GL0">
+                                <state key="normal" title="custom view"/>
+                                <connections>
+                                    <action selector="customViewButtonActionWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="J3k-xV-Ak1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="w3S-id-deR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3n9-hS-5Cl"/>
+                            <constraint firstItem="iE3-Kq-GL0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HmE-sb-tC4"/>
                             <constraint firstItem="w3S-id-deR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="HvK-oQ-pp7"/>
+                            <constraint firstItem="iE3-Kq-GL0" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="JWS-QO-ynb"/>
                             <constraint firstItem="U30-ti-pLt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Rfj-H1-7jm"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="U30-ti-pLt" secondAttribute="bottom" constant="20" id="j5r-jn-xRH"/>
                         </constraints>

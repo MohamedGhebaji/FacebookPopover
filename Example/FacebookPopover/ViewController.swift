@@ -37,5 +37,11 @@ class ViewController: UIViewController {
         let popover = Popover(option: [.type(.up), .color(.green), .cornerRaduis(0.0)])
         popover.show(content: aView, from: sender)
     }
+    
+    @IBAction func customViewButtonAction(sender: UIButton) {
+        let customView = CustomView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 180))
+        let popover = Popover(option: [.type(.up), .color(.clear), .cornerRaduis(60)])
+        popover.show(content: customView, from: sender)
+    }
 }
 
