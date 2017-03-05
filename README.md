@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/FacebookPopover.svg?style=flat)](http://cocoapods.org/pods/FacebookPopover)
 [![Platform](https://img.shields.io/cocoapods/p/FacebookPopover.svg?style=flat)](http://cocoapods.org/pods/FacebookPopover)
 
-![img](http://i.imgur.com/uwtmnPm.gifv)
+![img](http://i.imgur.com/uwtmnPm.gif)
 
 ## Example
 
