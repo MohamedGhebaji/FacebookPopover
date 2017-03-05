@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import FacebookPopover
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func showPopoverAction(sender: UIButton) {
+        let aView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 180))
+        aView.backgroundColor = .red
+        let popover = Popover()
+        popover.show(content: aView, from: sender)
+    }
 }
 

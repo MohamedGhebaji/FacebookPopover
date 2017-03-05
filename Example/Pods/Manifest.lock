@@ -1,0 +1,16 @@
+PODS:
+  - FacebookPopover (0.1.0)
+
+DEPENDENCIES:
+  - FacebookPopover (from `../`)
+
+EXTERNAL SOURCES:
+  FacebookPopover:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FacebookPopover: 87cf11ae48196921d288226af1db0b255d30da8e
+
+PODFILE CHECKSUM: 4218a757e463eac2189106753efff4f90d51770a
+
+COCOAPODS: 1.2.0

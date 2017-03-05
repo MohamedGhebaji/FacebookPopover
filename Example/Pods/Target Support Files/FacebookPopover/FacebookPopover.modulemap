@@ -1,0 +1,6 @@
+framework module FacebookPopover {
+  umbrella header "FacebookPopover-umbrella.h"
+
+  export *
+  module * { export * }
+}
