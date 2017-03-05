@@ -62,7 +62,7 @@ public class Popover: UIView {
             }
         }
         get {
-            return option
+            return self.option
         }
     }
     //MARK: - Life Cycle
