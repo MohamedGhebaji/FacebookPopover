@@ -19,16 +19,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3S-id-deR">
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="down"/>
                                 <connections>
-                                    <action selector="showPopoverActionWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IfE-eW-DS2"/>
+                                    <action selector="showDownPopoverActionWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wNK-uV-xt0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U30-ti-pLt">
+                                <state key="normal" title="up"/>
+                                <connections>
+                                    <action selector="showUpPopoverActionWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UR6-Bq-Rk9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="w3S-id-deR" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="2Iq-6d-ijH"/>
                             <constraint firstItem="w3S-id-deR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3n9-hS-5Cl"/>
+                            <constraint firstItem="w3S-id-deR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="HvK-oQ-pp7"/>
+                            <constraint firstItem="U30-ti-pLt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Rfj-H1-7jm"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="U30-ti-pLt" secondAttribute="bottom" constant="20" id="j5r-jn-xRH"/>
                         </constraints>
                     </view>
                 </viewController>

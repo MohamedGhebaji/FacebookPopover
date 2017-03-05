@@ -26,10 +26,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func showPopoverAction(sender: UIButton) {
+    @IBAction func showDownPopoverAction(sender: UIButton) {
         let aView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 180))
-        aView.backgroundColor = .red
-        let popover = Popover()
+        let popover = Popover(option: [.type(.down), .color(.red), .cornerRaduis(60)])
+        popover.show(content: aView, from: sender)
+    }
+    
+    @IBAction func showUpPopoverAction(sender: UIButton) {
+        let aView = UIView(frame: CGRect(x: 0, y: 0, width: 180, height: 180))
+        let popover = Popover(option: [.type(.up), .color(.green), .cornerRaduis(0.0)])
         popover.show(content: aView, from: sender)
     }
 }
